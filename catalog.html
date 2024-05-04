@@ -1,4 +1,3 @@
-<!-- catalog.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +7,451 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+
+
     <nav class="top-nav">
         <div class="nav-logo">
-            <img src="C:Users/ilia/Desktop/Sait/12/Img/Главная.jpg" alt="Логотип">
+          <h1>ZONEX</h1>
         </div>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="login.html">Вход</a></li>
-            <li><a href="cart.html">Корзина</a></li>
+        
+        <ul class="nav-Main">
+            <li><a class="button-style" href="index.html">Главная</a></li>
         </ul>
+        
+        <ul class="nav-catalog">
+            <li><a class="button-style">Каталог</a></li>
+        </ul>
+
+
+        <a href="login.html">
+            <img class="log-i" src="Log.png" />
+        </a>
+
+
+        <a href="javascript:void(0);" onclick="showCartPopup()">
+            <img class="shop-i" src="shop.png" />
+        </a>
     </nav>
 
-    <!-- Пример товара в каталоге -->
-    <div class="product">
-        <img src="C:Users/ilia/Desktop/Sait/12/Img/Главная.jpg" alt="Изображение товара">
-        <h2>ЛЕв</h2>
-        <p>Цена: $19.99</p>
-        <button class="add-to-cart">Добавить в корзину</button>
+<div style="width: 1914px; height: 2581px; flex-shrink: 0; background: linear-gradient(179deg, #313131 0%, #161618 100%)">
+<div class="banners-container">
+    <div class="t1-baner">
+    <div class="t1-Imag"></div>
+    <div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="size-s">
+            S
+        </div>
+        <div class="size-m">
+            M
+        </div>
+        <div class="size-l">
+            L
+        </div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="t1T-baner">
+            Футболка Хлопок ANTA 7166 M
+        </div>
+        <div class="t1t-baner">
+            Футболка с коротким рукавом из коллекции ANTA Cross-training выполнена из смесовой ткани DUPONT SORONA, эластичной, приятной на ощупь и комфортной.
+        </div>
+        <div class="t1T-r">
+            2 793 руб.
+        </div>
+    
+        <button class="add-to-cart" id="addToCartButton" onclick="openModal('Футболка Хлопок ANTA 7166 M', 2793)">В корзину</button>        
+
+    </div>
+    
+</div>  
+    <div class="t2-baner" >
+        <div class="t2-Imag"></div>
+        <div>
+
+            <div class="size-1k">
+            </div>
+            <div class="size-2k">
+            </div>
+            <div class="size-3k">
+            </div>
+    
+            <div class="size-s">
+                S
+            </div>
+            <div class="size-m">
+                M
+            </div>
+            <div class="size-l">
+                L
+            </div>
+    
+            <div class="size-1k">
+            </div>
+            <div class="size-2k">
+            </div>
+            <div class="size-3k">
+            </div>
+
+            <div class="t2T-baner">
+                Куртка женская Andessa Jacket W
+            </div>
+            <div class="t2t-baner">
+                Женская пуховая куртка для горных лыж и сноубординга, классического кроя Regular Fit с анатомической конструкцией.
+            </div>
+
+            <div class="t1T-r">
+                85 960 руб.
+            </div>
+            <button class="add-to-cart" id="addToCartButton" onclick="openModal('Куртка женская Andessa Jacket W', 85960)">В корзину</button>        
+        </div>
+    
+
+    </div>
+    
+
+
+
+
+    <div class="t3-baner">
+        <div class="t3-Imag"></div>
+        <div>
+            <div class="size-1k">
+            </div>
+            <div class="size-2k">
+            </div>
+            <div class="size-3k">
+            </div>
+    
+            <div class="size-s">
+                S
+            </div>
+            <div class="size-m">
+                M
+            </div>
+            <div class="size-l">
+                L
+            </div>
+    
+            <div class="size-1k">
+            </div>
+            <div class="size-2k">
+            </div>
+            <div class="size-3k">
+            </div>
+            <div class="t1T-r">
+                66 010 руб.
+            </div>
+            <button class="add-to-cart" id="addToCartButton" onclick="openModal('Брюки мужские Alpha SV Bib M', 66010)">В корзину</button>        
+            
+    
+            <div class="t3T-baner">
+                Брюки мужские Alpha SV Bib M
+            </div>
+            <div class="t3t-baner">
+                Обновлённые, универсальные мужские брюки с высоким поясом, зауженного кроя Trim Fit, предназначенными для альпинизма, скалолазания и треккинга. 
+            </div>
+        </div>
     </div>
 
-    <!-- Корзина товаров -->
-    <section id="cart">
-        <h2>Корзина товаров</h2>
-        <div id="cart-items">
-            <!-- Здесь будут отображаться добавленные товары -->
-        </div>
-    </section>
 
-    <script src="script.js"></script>
+
+    <div class="t4-baner" >
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="size-s">
+            S
+        </div>
+        <div class="size-m">
+            M
+        </div>
+        <div class="size-l">
+            L
+        </div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+        <div class="t1T-r">
+            19 990 руб.
+        </div>
+        <button class="add-to-cart" id="addToCartButton" onclick="openModal('Баскетбольные кроссовки', 19990)">В корзину</button>        
+        
+
+        <div class="t4-Imag"></div>
+            <div class="t4T-baner">
+                Баскетбольные кроссовки
+            </div>
+            <div class="t4t-baner">
+                Восьмая версия именных кроссовок для баскетбола от KLAY THOMPSON - одного из лучших игроков NBA! Улучшенная система 3D FLOW работающая в 3-х измерениях. Ось X - боковая поддержка.
+            </div>
+    </div>
+
+    <div class="t5-baner" >
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="size-s">
+            S
+        </div>
+        <div class="size-m">
+            M
+        </div>
+        <div class="size-l">
+            L
+        </div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+        <div class="t1T-r">
+            4 900руб.
+        </div>
+        <button class="add-to-cart" id="addToCartButton" onclick="openModal('Ремень Conveyor Belt', 4900)">В корзину</button>        
+
+        <div class="t5-Imag"></div>
+            <div class="t5T-baner">
+                Ремень Conveyor Belt
+            </div>
+            <div class="t5t-baner">
+                Очень прочный, универсальный ремень с металлической пряжкой. Вес изделия 95 грамм. МАТЕРИАЛЫ И ТЕХНОЛОГИИ: 1.5 in (3.75 cm) nylon webbing.
+            </div>
+    </div>
+
+
+    <div class="t6-baner">
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="size-s">
+            S
+        </div>
+        <div class="size-m">
+            M
+        </div>
+        <div class="size-l">
+            L
+        </div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+        <div class="t1T-r">
+            52 400 руб.
+        </div>
+        <button class="add-to-cart" id="addToCartButton" onclick="openModal('Куртка женская Centrale Parka W', 52400)">В корзину</button>        
+        <div class="t6-Imag"></div>
+            <div class="t6T-baner">
+                Куртка женская Centrale Parka W
+            </div>
+            <div class="t6t-baner">
+                Женская пуховая парка с капюшоном, свободного кроя Regular Fit, предназначенная для города.
+            </div>
+    </div>
+
+
+
+
+    <div class="t7-baner">
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="size-s">
+            S
+        </div>
+        <div class="size-m">
+            M
+        </div>
+        <div class="size-l">
+            L
+        </div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+        <div class="t1T-r">
+            9 590 руб.
+        </div>
+        <button class="add-to-cart" id="addToCartButton" onclick="openModal('Ветровка ANTA M', 9590)">В корзину</button>        
+        <div class="t7-Imag"></div>
+            <div class="t7T-baner">
+                Ветровка ANTA M
+            </div>
+            <div class="t7t-baner">
+
+            </div>
+    </div>
+
+
+    <div class="t8-baner">
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+
+        <div class="size-s">
+            S
+        </div>
+        <div class="size-m">
+            M
+        </div>
+        <div class="size-l">
+            L
+        </div>
+
+        <div class="size-1k">
+        </div>
+        <div class="size-2k">
+        </div>
+        <div class="size-3k">
+        </div>
+        <div class="t1T-r">
+            7 290 руб.
+        </div>
+        <button class="add-to-cart" id="addToCartButton" onclick="openModal('Кеды высокие утепленные ANTA 8913', 7290)">В корзину</button>        
+
+        <div class="t8-Imag"></div>
+            <div class="t8T-baner">
+                Кеды высокие утепленные ANTA 8913
+            </div>
+            <div class="t8t-baner">
+                Теплые повседневные кеды создают стильный образ с помощью вставок разной фактуры. Дополнительная вставка на мыске для большей долговечности.
+            </div>
+            
+    </div>
+
+
+
+
+
+
+</div>
+</div>
+<div class="foot-bg">
+    <div class="foot-gen">
+        <div class="zonex">
+            ZONEX
+        </div>
+        <div class ="service-help">
+            Сервис и помощь
+        </div>
+        <div class ="delivery-return">
+            Доставка и возврат
+        </div>
+        <div class ="about-us">
+            Про нас
+        </div>
+        <div class ="contact-info">
+            Контакты для связи
+        </div>
+        <div class ="write-to-us">
+            Напиши нам:
+        </div>
+        <div class ="email-contact">
+            kakayato_pochta@gmail.com
+        </div>
+
+
+
+    <div class="foot-int">
+        <div class ="order-info">Заказ и оплата<br/>Все о доставке<br/>Отслеживание заказа<br/>Правила возврата</div>
+        <div class ="faq-info">Часто задаваемые вопросы<br/>Таблица размеров<br/>Личный кабинет<br/>Контакты</div>
+        <div class ="stores-info">Магазины<br/>Вакансии<br/>Проекты</div>
+        
+        <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1262px; z-index: 2;" src="uil_vk.png" />
+        <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1314px; z-index: 2;" src="ic_baseline-whatsapp.png" />
+        <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1366px; z-index: 2;" src="ic_baseline-telegram.png" />
+
+    </div>
+</div> 
+</div>
+
+
+
+  <!-- Модальное окно -->
+  <div id="productModal" class="overlay">
+    <div class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="productName">Выбор товара</h2>
+      <p>Цена: <span id="productPrice">0</span> руб.</p>
+      <label for="size">Размер:</label>
+      <select id="size">
+        <option value="small">Маленький</option>
+        <option value="medium">Средний</option>
+        <option value="large">Большой</option>
+      </select>
+      <label for="quantity">Количество:</label>
+      <input type="number" id="quantity" min="1" value="1" oninput="updateTotalPrice()">
+      <p>Общая стоимость: <span id="totalPrice">0</span> руб.</p>
+      <button onclick="addToCart()">Добавить в корзину</button>
+    </div>
+  </div>
+
+<!-- Добавим блок для отображения корзины -->
+<div id="cartModal" class="overlay">
+    <div class="modal">
+        <span class="close" onclick="closeCartPopup()">&times;</span>
+        <h2>Ваша корзина</h2>
+        <div id="cartContent"></div>
+        <p>Общая сумма: <span id="totalPriceCart">0</span> руб.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+<script src="Tav.js"></script>
 </body>
 </html>

@@ -1,33 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин одежды</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div>
+        <img style="width: 1920px; height: 1093px; flex-shrink: 0;" src="Back.png" />
+        <div class="Fall-Winter"></div>
+    </div>
+
+    <div style="width: 1920px; height: 439px; flex-shrink: 0; z-index: 1; background: #202023">
+        <div class="l-baner">
+            <div class="lT-baner">
+               Мужская Коллекция
+            </div>
+            <img style="width: 291px; height: 291px; flex-shrink: 0; border-radius: 0px 30px 30px 0px; margin-left: 600px;" src="Mmain.png" />
+        </div>
+        <div class="r-baner">
+            <div class="rT-baner">
+                Женская Коллекция
+            </div>
+            <img style="width: 291px; height: 291px; flex-shrink: 0; border-radius: 0px 30px 30px 0px; margin-left: 600px;" src="Gmain.png" />
+        </div>
+    </div>
+    <div class="foot-bg">
+        <div class="foot-gen">
+            <div class="zonex">
+                ZONEX
+            </div>
+            <div class ="service-help">
+                Сервис и помощь
+            </div>
+            <div class ="delivery-return">
+                Доставка и возврат
+            </div>
+            <div class ="about-us">
+                Про нас
+            </div>
+            <div class ="contact-info">
+                Контакты для связи
+            </div>
+            <div class ="write-to-us">
+                Напиши нам:
+            </div>
+            <div class ="email-contact">
+                kakayato_pochta@gmail.com
+            </div>
+
+        </div>
+        <div class="foot-int">
+            <div class ="order-info">Заказ и оплата<br/>Все о доставке<br/>Отслеживание заказа<br/>Правила возврата</div>
+            <div class ="faq-info">Часто задаваемые вопросы<br/>Таблица размеров<br/>Личный кабинет<br/>Контакты</div>
+            <div class ="stores-info">Магазины<br/>Вакансии<br/>Проекты</div>
+            
+            <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1262px; z-index: 2;" src="uil_vk.png" />
+            <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1314px; z-index: 2;" src="ic_baseline-whatsapp.png" />
+            <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1366px; z-index: 2;" src="ic_baseline-telegram.png" />
+
+        </div>
+    </div>    
     <nav class="top-nav">
         <div class="nav-logo">
-            <img src="C:Users/ilia/Desktop/Sait/12/Img/Главная.jpg" alt="Логотип">
+          <h1>ZONEX</h1>
         </div>
-        <ul>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="login.html">Вход</a></li>
-            <li><a href="cart.html">Корзина</a></li>
+        
+        <ul class="nav-Main">
+            <li><a class="button-style">Главная</a></li>
         </ul>
+        
+        <ul class="nav-catalog">
+            <li><a class="button-style" href="catalog.html">Каталог</a></li>
+        </ul>
+
+
+        <a href="login.html">
+            <img class="log-i" src="Log.png" />
+        </a>
+
+
+        <a href="javascript:void(0);" onclick="showCartPopup()">
+            <img class="shop-i" src="shop.png" />
+        </a>
     </nav>
 
-    <!-- Большой баннер -->
-    <div class="banner">
-        <h1>Добро пожаловать в наш магазин одежды!</h1>
-    </div>
 
-    <!-- Информация с ссылкой на электронную почту -->
-    <div class="info">
-        <p>Свяжитесь с нами по адресу: <a href="mailto:info@example.com">info@example.com</a></p>
-    </div>
 
-    <script src="script.js"></script>
+    <div class="Fall-Winter">
+        <div>
+            <div>Fall-Winter<br/>Clearance Sales</div>
+        </div>
+    </div>
+    <script src="Tav.js"></script>
 </body>
 </html>

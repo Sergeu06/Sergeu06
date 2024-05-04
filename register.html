@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Вход</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
-  <nav class="top-nav">
-    <div class="nav-logo">
-        <img src="C:Users/ilia/Desktop/Sait/12/Img/Главная.jpg" alt="Логотип">
-    </div>
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="login.html">Вход</a></li>
-        <li><a href="cart.html">Корзина</a></li>
-    </ul>
-</nav>
+
+<div style="width: 1914px; height: 1197px; flex-shrink: 0; background: linear-gradient(179deg, #313132 0%, #161618 100%)">
+  <form action="/register" method="post">
+      <div class="bg-log">
+        <input class="Pol1"type="text" id="login" placeholder="Логин">
+        </input>
+        <input class="Pol2" type="password" id="password" placeholder="Пароль">
+        </input>
+          <div class="reg-up">
+            Регистрация
+          </div>
+          <button class="reg-b" type="submit" >Зарегистрироваться</button>
+          </div>
+      </div>
+    </form>
+
+
+</div>
+
+    <div class="foot-bg">
+        <div class="foot-gen">
+            <div class="zonex">
+                ZONEX
+            </div>
+            <div class ="service-help">
+                Сервис и помощь
+            </div>
+            <div class ="delivery-return">
+                Доставка и возврат
+            </div>
+            <div class ="about-us">
+                Про нас
+            </div>
+            <div class ="contact-info">
+                Контакты для связи
+            </div>
+            <div class ="write-to-us">
+                Напиши нам:
+            </div>
+            <div class ="email-contact">
+                kakayato_pochta@gmail.com
+            </div>
+
+        </div>
+        <div class="foot-int">
+            <div class ="order-info">Заказ и оплата<br/>Все о доставке<br/>Отслеживание заказа<br/>Правила возврата</div>
+            <div class ="faq-info">Часто задаваемые вопросы<br/>Таблица размеров<br/>Личный кабинет<br/>Контакты</div>
+            <div class ="stores-info">Магазины<br/>Вакансии<br/>Проекты</div>
+            
+            <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1262px; z-index: 2;" src="uil_vk.png" />
+            <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1314px; z-index: 2;" src="ic_baseline-whatsapp.png" />
+            <img style="width: 40px; height: 40px; flex-shrink: 0; position: absolute; top: 61px; left: 1366px; z-index: 2;" src="ic_baseline-telegram.png" />
+
+        </div>
+    </div> 
+        </div>    
+    <nav class="top-nav">
+        <div class="nav-logo">
+          <h1>ZONEX</h1>
+        </div>
+        
+        <ul class="nav-Main">
+            <li><a class="button-style" href="index.html">Главная</a></li>
+        </ul>
+        
+        <ul class="nav-catalog">
+            <li><a class="button-style" href="catalog.html">Каталог</a></li>
+        </ul>
+
+
+        <a href="login.html">
+            <img class="log-i" src="Log.png" />
+        </a>
+
+
+        <a href="javascript:void(0);" onclick="showCartPopup()">
+            <img class="shop-i" src="shop.png" />
+        </a>
+        </a>
     </nav>
 
-    <header>
-        <h1>Регистрация</h1>
-    </header>
-
-    <section>
-        <form action="register.php" method="post">
-            <h2>Регистрация</h2>
-            <label for="newUsername">Новое имя пользователя:</label>
-            <input type="text" id="newUsername" name="newUsername" required>
-            <label for="newPassword">Новый пароль:</label>
-            <input type="password" id="newPassword" name="newPassword" required>
-            <button type="submit">Зарегистрироваться</button>
-        </form>
-    </section>
-
-    <script src="script.js"></script>
+    
+    <script src="Tav.js"></script>
 </body>
 </html>
